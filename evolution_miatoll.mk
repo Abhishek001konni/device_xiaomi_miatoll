@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The Project-Xtended
+# Copyright (C) 2020 The Evolution-X Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -7,19 +7,16 @@
 # Inherit from miatoll  device
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
-# Inherit some common Xtended stuff
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common Evolution-X stuff
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
-XTENDED_BUILD_TYPE := OFFICIAL
-XTENDED_BUILD_MAINTAINER := SonalSingh
-XTENDED_BUILD_DONATE_URL := https://www.paypal.me/sonal18
-XTENDED_BUILD_SUPPORT_URL := https://t.me/arrow_xtended_miatoll
+EVO_BUILD_TYPE := CUSTOM
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
-PRODUCT_NAME := xtended_miatoll
+PRODUCT_NAME := evolution_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Miatoll
